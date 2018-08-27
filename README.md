@@ -1,4 +1,4 @@
-<!doctype>
+<!DOCTYPE>
 <html>
  <head>
    <h2>HTML5 Hands On For Trendnxt Exam</h2>
