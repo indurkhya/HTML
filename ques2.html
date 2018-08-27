@@ -10,7 +10,8 @@
 	 {
 		alert("Name must contains characters only.");
 		return;
-	}
+	 }
+
 	if(name.length > 14) 
 	{	
 		alert("Name can be maximum 14 character.");	
@@ -25,12 +26,14 @@
 		alert("Age: cannot be blank.")
 	}	
 	if(!age.match(/^\d+/))	
-	{
+	 {
 		alert("Age: Please enter only integer numerical values.");
 		return;
+	 }
 	}
-	}
-</script>
+
+</script>
+
 <style>
 svg {
        float:right;
