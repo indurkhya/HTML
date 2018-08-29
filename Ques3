@@ -1,0 +1,41 @@
+<!DOCTYPE >
+<html>
+<head>
+<body>
+<div style align="right">
+<div style="text-align:center"> 
+<h2>"Awesome Online videos"</h2>
+</div>
+<img src=pic.jpg ></img>
+<div>
+
+<div style="text-align:left"> 
+
+
+  <video id="video1" width="1350">
+    <source src="video.mp4" type="video/mp4">
+   
+    Your browser does not support HTML5 video.
+  </video><br><br>
+ <button onclick="play()">play</button> 
+  <button onclick="Pause()">Pause</button>
+  
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function play() {  
+        myVideo.play(); 
+        }
+function Pause() {  
+        myVideo.pause(); 
+} 
+</script> 
+
+<p style align="left">video of the week </p>
+</div>
+</div>
+
+</body>
+</html>
