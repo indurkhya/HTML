@@ -1,38 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-	function validateForm()
-	{
-		 var age = document.forms["eventForm"]["age"].value;	
-	    	var name = document.forms["eventForm"]["name"].value;
-	if(!name.match(/^[A-Za-z]+$/))
-	 {
-		alert("Name must contains characters only.");
-		return;
-	 }
-
-	if(name.length > 14) 
-	{	
-		alert("Name can be maximum 14 character.");	
-		return;
-	}	
-	if(name.length < 3) 
-	{	
-		alert("Name must be minimum 3 character.")
-	}
-	if(age.length == 0) 
-	{	
-		alert("Age: cannot be blank.")
-	}	
-	if(!age.match(/^\d+/))	
-	 {
-		alert("Age: Please enter only integer numerical values.");
-		return;
-	 }
-	}
-
-</script>
 
 <style>
 svg {
@@ -58,11 +26,11 @@ Sorry, your browser does not support inline SVG.
 <h1 style="text-align:center; font-family:courier;">"Xena Events"</h1>
 <p style="text-align:center;"> Which is conducting a
 hot balloon riding event from Aug 28th 2018 onwards for 5 days.</p>
-<form class="event" name="eventForm" onsubmit="validateForm()" method="post">
+<form>
 <table align="left">
 <tr >
 <td>Name : </td>
-<td> <input type="text" name="name" placeholder="Name"></td>
+<td> <input type="text" name="name" placeholder="Name"  pattern="[A-Za-z]{1,15}" title="only Alphabet "></td>
 </tr><wbr>
 <tr >
 <td>Age  : </td> 
